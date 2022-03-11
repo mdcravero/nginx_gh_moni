@@ -1,7 +1,7 @@
 FROM nginx
 
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY index.html /var/www/moni/index.html
+COPY files/nginx.conf /etc/nginx/nginx.conf
+COPY files/index.html /var/www/moni/index.html
 
 EXPOSE 80
 
