@@ -2,9 +2,9 @@ name: Deploy on Heroku
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
@@ -12,11 +12,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build, Push and Deploy to Heroku 
+      - name: Build, Push and Deploy to Heroku
         id: heroku
-        uses: jctaveras/heroku-deploy@v1.0.0  
+        uses: jctaveras/heroku-deploy@v1.0.0
         with:
-          email: synergia.soporte@gmail.com 
-          api_key: cdfe16e7-388a-4aa7-a09f-ea8d16d264b4 
-          app_name: nginx-moni 
+          email: ${{ secrets.USER_EMAIL }}
+          api_key: ${{ secrets.HEROKU_KEY }}
+          app_name: ${{ secrets.HEROKU_PROJET }}
           dockerfile: ./
