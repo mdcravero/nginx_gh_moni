@@ -20,5 +20,4 @@ jobs:
           api_key: cdfe16e7-388a-4aa7-a09f-ea8d16d264b4 # your  heroku api key
           app_name: nginx-moni # you aplication name
           dockerfile: ../ # set the path to the folder wher the Dokerfile is located
-          options: '' # Docker Build Options
-          formation: '' # Docker Dyno Formation. By default is web
+        
