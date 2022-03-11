@@ -12,11 +12,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build, Push and Deploy to Heroku #set the whatever name you want to this step
+      - name: Build, Push and Deploy to Heroku 
         id: heroku
-        uses: jctaveras/heroku-deploy@v1.0.0  # use the latest version of the action
+        uses: jctaveras/heroku-deploy@v1.0.0  
         with:
-          email: synergia.soporte@gmail.com # your heroku email
-          api_key: cdfe16e7-388a-4aa7-a09f-ea8d16d264b4 # your  heroku api key
-          app_name: nginx-moni # you aplication name
-          dockerfile: ./ # set the path to the folder wher the Dokerfile is located
+          email: synergia.soporte@gmail.com 
+          api_key: cdfe16e7-388a-4aa7-a09f-ea8d16d264b4 
+          app_name: nginx-moni 
+          dockerfile: ./
