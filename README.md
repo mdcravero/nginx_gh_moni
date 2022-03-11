@@ -1,6 +1,6 @@
 # CI/CD sobre Github Actions 
 
-En este proyecto se realizó una automatización con Github Actions, para que al realizar un push sobre este repositorio buildee un contenedor con nginx, que guardará de forma automática los cambios realizados sobre el index.html ubicaco en:
+En este proyecto se realizó una automatización con Github Actions, para que al hacer un push sobre este repositorio buildee un contenedor con nginx, que guardará de forma automática los cambios realizados sobre el index.html ubicaco en:
 
 ```
 files
