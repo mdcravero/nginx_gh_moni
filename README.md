@@ -10,12 +10,12 @@ files
 
 También de forma automática se desplegará dicho proyecto sobre heroku.
 
-Cabe destacar que se deben establecer para este ejemplo, obteniendo el api_key desde heroku, los siguientes secrets sobre github actios:
+Cabe destacar que se deben establecer para este ejemplo, los siguientes secrets sobre github actions:
 
 ```
-email: ${{ secrets.USER_EMAIL }}
-api_key: ${{ secrets.HEROKU_KEY }}
-app_name: ${{ secrets.HEROKU_PROJET }}
+email: ${{ secrets.USER_EMAIL }} #Cuenta de Heroku
+api_key: ${{ secrets.HEROKU_KEY }} #Api Key de Heroku
+app_name: ${{ secrets.HEROKU_PROJET }} #Nombre de la APP
 
 ```
 
