@@ -1,10 +1,7 @@
 FROM nginx
 
-RUN rm -rf /etc/nginx/sites-available/default
-
-COPY files/nginx.conf /etc/nginx/conf.d/nginx.conf
-COPY files/index.html /var/www/moni/index.html
+COPY files/index.html /usr/share/nginx/html/index.html
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+#CMD ["nginx", "-g", "daemon off;"]
